@@ -37,7 +37,7 @@
     }
 
     /*Colors */
-    .Accent {
+    .accent {
       color: #FFDC26;
     }
 
@@ -50,29 +50,29 @@
 <body class="sora-font">
   <header>
     <!-- Navbar -->
-    <nav>
-      <div class="secondary flex items-center justify-around border-2">
-        <div class="flex items-center border-2 border-black">
+    <nav class="max-h-[100px]">
+      <div class="secondary flex items-center justify-around w-full sm:border-2 sm:border-black md:border-0 lg:border-0">
+        <div class="flex items-center">
           <img class="w-12 h-12" src="c1-assets/logo-header.png" alt="Logo">
           <a class="text-3xl invisible md:visible">Browse<span style="color: #FFDC26;">4</span>Pets</a>
         </div>
         <div class="invisible md:visible">
-          <ul class="flex items-center space-x-8 border-2 border-black">
+          <ul class="flex items-center space-x-8">
             <li><a>Find a pet</a></li>
             <li><a>Breeds</a></li>
             <li><a>Contact us</a></li>
           </ul>
         </div>
-        <div class="flex space-x-4 border-2 border-black">
-          <ul class="flex items-center space-x-1 invisible md:visible border-2 border-black">
+        <div class="flex space-x-4">
+          <ul class="flex items-center space-x-1 invisible md:visible">
             <li><a><i class="fa-regular fa-bell"></i></a></li>
             <li><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
           </ul>
-          <button class="btn btn-outline btn-warning invisible md:visible">Login</button>
-          <button class="btn btn-warning invisible md:visible">Register</button>
+          <button class="text-sm border-2 border-[#FFDC26] rounded-lg px-7 py-2.5 invisible md:visible">Login</button>
+          <button class="text-sm bg-[#FFDC26] rounded-lg px-7 py-2.5 invisible md:visible">Register</button>
         </div>
         <!-- Dropdown -->
-        <div class="dropdown md:invisible lg:invisible">
+        <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
