@@ -41,11 +41,17 @@
       color: #FFDC26;
     }
 
-    .secondary {
+    .secondary{
       background-color: #FFF9F4;
     }
     .footer-bg{
       background-color: rgba(255, 220, 38, 0.5);
+    }
+    .card-g1{
+      background-image: linear-gradient(to right, #F8CCFB , #ACD2FD);
+    }
+    .card-g2{
+      background-image: linear-gradient(to right, #FFF9F4 , #F9DF8A);
     }
   </style>
 </head>
@@ -284,7 +290,7 @@
       <!-- card container -->
       <!-- bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] -->
       <div class="flex px-35">
-        <div class="bg-[#F8CCFB] flex rounded-lg">
+        <div class="card-g1 flex rounded-lg">
           <div class="w-1/2 pl-16 content-center max-w-70 max-h-50 my-34">
             <p class="text-sm">Under Price</p>
             <p class="adlam-font text-xl md:text-2xl">Pet Grooming Mitt</p>
@@ -295,7 +301,7 @@
             <img src="c1-assets/cute-dog-mid.png" alt="">
           </div>
         </div>
-        <div class="flex bg-[#F9DF8A] mx-4 rounded-lg">
+        <div class="card-g2 flex mx-4 rounded-lg">
           <div class="max-w-60 max-h-28 pl-12 pt-12">
             <p class="adlam-font text-xl md:text-2xl">T-Shirt for Dogs</p>
             <p class="adlam-font text-4xl md:text-5xl text-[#FFDC26]">$7.99</p>
@@ -345,9 +351,9 @@
     </div>
   </main>
   <footer>
-    <div>
+    <div class="mt-80 relative">
       <!-- part-1 -->
-       <div class="mx-35 flex secondary rounded-xl">
+       <div class="mx-35 flex secondary rounded-xl absolute -top-66">
           <div class="mx-22 my-9">
             <img src="c1-assets/cute-pet-mid.png" alt="">
           </div>
