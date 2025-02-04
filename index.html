@@ -41,17 +41,38 @@
       color: #FFDC26;
     }
 
-    .secondary{
+    .secondary {
       background-color: #FFF9F4;
     }
-    .footer-bg{
+
+    .footer-bg {
       background-color: rgba(255, 220, 38, 0.5);
     }
-    .card-g1{
-      background-image: linear-gradient(to right, #F8CCFB , #ACD2FD);
+
+    .card-g1 {
+      background-image: linear-gradient(to right, #F8CCFB, #ACD2FD);
     }
-    .card-g2{
-      background-image: linear-gradient(to right, #FFF9F4 , #F9DF8A);
+
+    .card-g2 {
+      background-image: linear-gradient(to right, #FFF9F4, #F9DF8A);
+    }
+
+    /* Animation */
+    .color-change {
+      animation-name: color-cng;
+      animation-duration: 5s;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes color-cng {
+      from {
+        color: black;
+      }
+
+      to {
+        color: blue;
+      }
     }
   </style>
 </head>
@@ -103,7 +124,7 @@
     <!-- Banner -->
     <div class="items-center mt-16 mx-36 relative">
       <div class="w-2/3 absolute top-20">
-        <h1 class="adlam-font sm:text-3xl md:text-4xl lg:text-6xl">Pamper Your Pet,<br>Because They Deserve <br>the Best
+        <h1 class="adlam-font sm:text-3xl md:text-4xl lg:text-6xl color-change">Pamper Your Pet,<br>Because They Deserve <br>the Best
         </h1>
         <p class="sm:text-base md:text-xl opacity-70 max-w-full">Discover a world of treats, toys, and essentials
           handpicked for your furry friends. Shop now and make tails wag with joy!</p>
@@ -315,35 +336,39 @@
     <!-- FAQ Section -->
     <div class="pl-35 pr-35 pt-35 pb-10">
       <h1 class="adlam-font text-4xl md:text-6xl text-center pb-5">FAQ</h1>
-      
+
       <!-- question & answer -->
       <div class="space-y-2">
         <div class="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" checked="checked" />
           <div class="collapse-title text-xl font-medium">How often should I feed my cat?</div>
           <div class="collapse-content">
-            <p>Adult cats typically eat twice a day. Kittens may need more frequent meals. Always consult your vet for specific dietary advice.</p>
+            <p>Adult cats typically eat twice a day. Kittens may need more frequent meals. Always consult your vet for
+              specific dietary advice.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" />
           <div class="collapse-title text-xl font-medium">Why is my cat kneading me?</div>
           <div class="collapse-content">
-            <p>Cats knead as a sign of comfort and contentment. It's an instinctive behavior they develop as kittens while nursing.</p>
+            <p>Cats knead as a sign of comfort and contentment. It's an instinctive behavior they develop as kittens
+              while nursing.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" />
           <div class="collapse-title text-xl font-medium">How can I stop my cat from scratching furniture?</div>
           <div class="collapse-content">
-            <p>Provide scratching posts and positive reinforcement when they use them. You can also use double-sided tape on furniture to discourage scratching.</p>
+            <p>Provide scratching posts and positive reinforcement when they use them. You can also use double-sided
+              tape on furniture to discourage scratching.</p>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200">
           <input type="radio" name="my-accordion-2" />
           <div class="collapse-title text-xl font-medium">What is the best way to introduce a new cat to my home?</div>
           <div class="collapse-content">
-            <p>Gradually introduce your new cat by providing a safe, quiet space first. Use scent swapping techniques and supervise initial interactions with other pets.</p>
+            <p>Gradually introduce your new cat by providing a safe, quiet space first. Use scent swapping techniques
+              and supervise initial interactions with other pets.</p>
           </div>
         </div>
       </div>
@@ -353,44 +378,45 @@
   <footer>
     <div class="mt-80 relative">
       <!-- part-1 -->
-       <div class="mx-35 flex secondary rounded-xl absolute -top-66">
-          <div class="mx-22 my-9">
-            <img src="c1-assets/cute-pet-mid.png" alt="">
-          </div>
-          <div>
-            <h3 class="adlam-font text-3xl content-center pt-18">Get Awesome News!</h3>
-            <h2 class="text-xl pt-5 pb-9">Exclusive training tips, ticks, product deals and more.</h2>
-            <input class="w-118 h-16 bg-white rounded-lg pl-5" type="email" name="" id="" placeholder="Enter email..."> <br>
-            <button class="text-sm bg-[#FFDC26] rounded-lg mt-4 px-7 py-2.5">Subscribe</button>
-          </div>
-       </div>
-       <!-- part-2 -->
-        <div class="footer-bg flex content-center justify-around h-164">
-          <!-- 1 -->
-          <div class="w-105 pt-92 pb-35">
-            <div class="flex items-center space-x-2">
-              <img class="w-12 h-12" src="c1-assets/logo-footer.png" alt="Logo">
-              <a class="text-2xl invisible md:visible">Browse<span style="color: #FFDC26;">4</span>Pets</a>
-            </div>
-            <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
-          </div>
-          <!-- 2 -->
-           <div class="w-35 pt-92 pb-35">
-            <p class="pt-2 pb-3">Find a pet</p>
-            <p class="pb-3">Breeds</p>
-            <p>Contact us</p>
-           </div>
-          <!-- 3 -->
-           <div class="w-20 pt-108 pb-35">
-              <p>Follow us</p>
-              <div class="flex justify-between">
-                <p><i class="fa-brands fa-facebook"></i></p>
-                <p><i class="fa-brands fa-instagram"></i></p>
-                <p><i class="fa-brands fa-linkedin"></i></p>
-                <p><i class="fa-brands fa-youtube"></i></p>
-              </div>
-           </div>
+      <div class="mx-35 flex secondary rounded-xl absolute -top-66">
+        <div class="mx-22 my-9">
+          <img src="c1-assets/cute-pet-mid.png" alt="">
         </div>
+        <div>
+          <h3 class="adlam-font text-3xl content-center pt-18">Get Awesome News!</h3>
+          <h2 class="text-xl pt-5 pb-9">Exclusive training tips, ticks, product deals and more.</h2>
+          <input class="w-118 h-16 bg-white rounded-lg pl-5" type="email" name="" id="" placeholder="Enter email...">
+          <br>
+          <button class="text-sm bg-[#FFDC26] rounded-lg mt-4 px-7 py-2.5">Subscribe</button>
+        </div>
+      </div>
+      <!-- part-2 -->
+      <div class="footer-bg flex content-center justify-around h-164">
+        <!-- 1 -->
+        <div class="w-105 pt-92 pb-35">
+          <div class="flex items-center space-x-2">
+            <img class="w-12 h-12" src="c1-assets/logo-footer.png" alt="Logo">
+            <a class="text-2xl invisible md:visible">Browse<span style="color: #FFDC26;">4</span>Pets</a>
+          </div>
+          <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        </div>
+        <!-- 2 -->
+        <div class="w-35 pt-92 pb-35">
+          <p class="pt-2 pb-3">Find a pet</p>
+          <p class="pb-3">Breeds</p>
+          <p>Contact us</p>
+        </div>
+        <!-- 3 -->
+        <div class="w-20 pt-108 pb-35">
+          <p>Follow us</p>
+          <div class="flex justify-between">
+            <p><i class="fa-brands fa-facebook"></i></p>
+            <p><i class="fa-brands fa-instagram"></i></p>
+            <p><i class="fa-brands fa-linkedin"></i></p>
+            <p><i class="fa-brands fa-youtube"></i></p>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
